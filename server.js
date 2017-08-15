@@ -72,10 +72,11 @@ var htmltemplate=`
         </div>    
         <div>
             ${content}
-        </div>
-        </div>
+        
         <div>
             ${date}
+        </div>
+        </div>    
     </body>
 </html>
 `;
