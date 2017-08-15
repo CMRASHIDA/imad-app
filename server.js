@@ -69,10 +69,10 @@ var htmltemplate=`
         </div>
             <hr/>
             ${heading}
-        </div>    
+    
         <div>
             ${content}
-        
+        </div>
         <div>
             ${date}
         </div>
