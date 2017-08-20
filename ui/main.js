@@ -6,7 +6,7 @@ var img=document.getElementById('rashi');
 function moveRight()
 {
     var marginLeft=0;
-    marginLeft=maginLeft+10;
+    marginLeft=marginLeft+10;
     img.style.marginLeft=marginLeft+'px';
 }
 img.onclick=function(){
