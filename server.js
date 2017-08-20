@@ -51,8 +51,8 @@ function createtemplate(data)
 {
 var title=data.title;
 var heading=data.heading;
-var date=data.date;
 var content=data.content;
+var date=data.date;
 var htmltemplate=`
 <html>
     <head>
@@ -84,10 +84,10 @@ return htmltemplate;
 }
 
 app.get('/', function (req, res) {
-  res.sendFile(createtemplate(article-1));
+  res.sendFile(path.join(__dirname,'ui','index.html'));
 });
 
-app.get('/:articlename',function(req, res) {
+app.get('/:article-1',function(req, res) {
     var articlename=req.param.articlename;
     res.sendFile(createtemplate(articles[articlename]));
 });
