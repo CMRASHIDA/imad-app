@@ -84,12 +84,12 @@ return htmltemplate;
 }
 
 app.get('/', function (req, res) {
-  res.send(createtemplate(article-1));
+  res.sendFile(createtemplate(article-1));
 });
 
 app.get('/:articlename',function(req, res) {
     var articlename=req.param.articlename;
-    res.send(createtemplate(articles[articlename]));
+    res.sendFile(createtemplate(articles[articlename]));
 });
 
 
